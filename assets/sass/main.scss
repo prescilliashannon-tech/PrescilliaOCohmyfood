@@ -1,0 +1,26 @@
+// Utils
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/steps';
+@import 'components/badges';
+@import 'components/loader';
+
+// Pages
+@import 'pages/home';
+@import "pages/menu";
+
+@media (min-width: 1024px) {
+   /* version desktop */
+}

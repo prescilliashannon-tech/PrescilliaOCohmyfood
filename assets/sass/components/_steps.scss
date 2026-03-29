@@ -1,0 +1,66 @@
+.step {
+  display: flex;
+  align-items: center;
+  background-color: $color-light;
+  border-radius: 20px;
+  padding: 60px 20px;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.step__number {
+  @include flex-center;
+  background-color: $color-primary;
+  color: $color-white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 16px;
+}
+
+.step__icon {
+  color: grey;
+  margin-left: 30px;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.step__icon_store {
+  color: #9356dc;
+  margin-left: 30px;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.step__text {
+  font-weight: 500;
+}
+
+.step:hover {
+  background-color: lighten($color-light, 5%);
+  transform: translateX(5px);
+}
+
+@media (min-width: 1024px) {
+  .step__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  gap: 40px; 
+  max-width: 1000px; 
+  margin: 0 auto;  
+}
+
+.step__icon {
+  font-size: 1.4rem;
+}
+
+.step { 
+  flex: 1; 
+  padding: 20px 30px;
+}
+
+.step__number { 
+  font-size: 1.2rem;
+}
+}

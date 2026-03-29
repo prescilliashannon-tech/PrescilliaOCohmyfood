@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.btn--primary {
+  background: linear-gradient($color-secondary, $color-primary);
+  color: $color-white;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+
+}
+
+.btn--primary:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.back-button {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-size: 22px;
+  color: #353535;
+  z-index: 10;
+  transform: translateY(-50%); /* centré verticalement */;
+
+  i {
+    transition: transform 0.2s ease;
+  }
+
+  &:hover i {
+    transform: translateX(-3px);
+  }
+}
