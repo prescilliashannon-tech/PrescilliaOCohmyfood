@@ -19,31 +19,31 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: linear-gradient($color-secondary, $color-primary);
-  animation: pulse 0.6s infinite alternate;
+  background: linear-gradient($color-secondary, $color-primary); 
+  animation: pulse 0.6s infinite alternate; // animation de pulsation
 }
 
 .loader__circle:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.2s; // décalage de 0.2s pour le deuxième cercle
 }
 
 .loader__circle:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 0.4s; // décalage de 0.4s pour le troisième cercle
 }
 
 @keyframes pulse {
-  from {
-    transform: scale(1);
+  from { // état initial : petit et semi-transparent
+    transform: scale(1); 
     opacity: 0.6;
   }
-  to {
+  to { // état final : plus grand et opaque
     transform: scale(1.6);
     opacity: 1;
   }
 }
 
 @keyframes fadeOut {
-  to {
+  to { // état final : transparent et caché
     opacity: 0;
     visibility: hidden;
   }

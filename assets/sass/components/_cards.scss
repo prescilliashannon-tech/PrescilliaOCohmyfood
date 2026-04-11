@@ -56,12 +56,12 @@
   color: #353535;
 }
 
-/* cœur à droite, centré verticalement */
+/* cœur à droite qui est centré verticalement */
 .heart {
   font-size: 24px;
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
-  color: #000; /* bordure noire par défaut */
+  color: #000; /* bordure noire */
 }
 
 .heart.liked {
