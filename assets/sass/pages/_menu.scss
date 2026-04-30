@@ -109,7 +109,7 @@
 @keyframes fadeInUp {
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); 
      }
 }
 
@@ -169,7 +169,7 @@
 }
 
 .menu-card__check {
-  position: absolute;          /* indispensable */
+  position: absolute;          /* positionné par rapport à la carte */
   right: 0;                    /* collé à droite */
   top: 0;                      /* commence en haut */
   bottom: 0;                   /* prend toute la hauteur */
